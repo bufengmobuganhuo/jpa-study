@@ -35,3 +35,10 @@ out/
 
 ### VS Code ###
 .vscode/
+.DS_Store
+.mvn/
+gradle/
+gradlew.bat
+settings.gradle
+src/main/resources/static/
+src/main/resources/templates/
