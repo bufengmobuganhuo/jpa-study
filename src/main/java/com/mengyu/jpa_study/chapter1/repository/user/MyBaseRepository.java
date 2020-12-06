@@ -1,4 +1,4 @@
-package com.mengyu.jpa_study.chapter1.repository;
+package com.mengyu.jpa_study.chapter1.repository.user;
 
 import org.springframework.data.repository.NoRepositoryBean;
 import org.springframework.data.repository.Repository;

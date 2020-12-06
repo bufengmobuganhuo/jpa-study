@@ -1,8 +1,8 @@
-package com.mengyu.jpa_study.chapter1.repository;
+package com.mengyu.jpa_study.chapter1.repository.user;
 
 import com.mengyu.jpa_study.chapter1.dto.UserDto;
 import com.mengyu.jpa_study.chapter1.dto.UserSimpleDto;
-import com.mengyu.jpa_study.chapter1.entity.UserExtend;
+import com.mengyu.jpa_study.chapter1.entity.user.UserExtend;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

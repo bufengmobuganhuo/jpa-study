@@ -1,4 +1,4 @@
-package com.mengyu.jpa_study.chapter1.entity;
+package com.mengyu.jpa_study.chapter1.entity.user;
 
 import lombok.Data;
 

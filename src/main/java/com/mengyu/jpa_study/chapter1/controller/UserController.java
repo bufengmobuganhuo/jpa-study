@@ -1,7 +1,7 @@
 package com.mengyu.jpa_study.chapter1.controller;
 
-import com.mengyu.jpa_study.chapter1.entity.User;
-import com.mengyu.jpa_study.chapter1.repository.UserRepository;
+import com.mengyu.jpa_study.chapter1.entity.user.User;
+import com.mengyu.jpa_study.chapter1.repository.user.UserRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;

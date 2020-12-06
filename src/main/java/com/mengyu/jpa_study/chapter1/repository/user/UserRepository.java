@@ -1,6 +1,6 @@
-package com.mengyu.jpa_study.chapter1.repository;
+package com.mengyu.jpa_study.chapter1.repository.user;
 
-import com.mengyu.jpa_study.chapter1.entity.User;
+import com.mengyu.jpa_study.chapter1.entity.user.User;
 import com.mengyu.jpa_study.chapter1.dto.UserOnlyNameAndEmail;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Slice;

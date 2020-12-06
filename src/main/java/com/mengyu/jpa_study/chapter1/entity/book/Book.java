@@ -7,12 +7,11 @@ import javax.persistence.*;
 /**
  * @author yuzhang
  * @date 2020/12/4 下午5:19
- * TODO
+ * 基础类
  */
 @Data
 @Entity(name = "book")
-@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name = "color", discriminatorType = DiscriminatorType.STRING)
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

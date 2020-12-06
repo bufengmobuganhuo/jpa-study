@@ -2,8 +2,8 @@ package com.mengyu.jpa_study.chapter1;
 
 import com.mengyu.jpa_study.chapter1.dto.UserDto;
 import com.mengyu.jpa_study.chapter1.dto.UserSimpleDto;
-import com.mengyu.jpa_study.chapter1.repository.UserExtendRepository;
-import com.mengyu.jpa_study.chapter1.repository.UserRepository;
+import com.mengyu.jpa_study.chapter1.repository.user.UserExtendRepository;
+import com.mengyu.jpa_study.chapter1.repository.user.UserRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

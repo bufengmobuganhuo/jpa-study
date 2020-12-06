@@ -1,9 +1,6 @@
-package com.mengyu.jpa_study.chapter1.entity;
+package com.mengyu.jpa_study.chapter1.entity.user;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.Embeddable;
 import java.io.Serializable;

@@ -1,13 +1,9 @@
 package com.mengyu.jpa_study.chapter1;
 
-import com.mengyu.jpa_study.chapter1.entity.UserInfo;
-import com.mengyu.jpa_study.chapter1.entity.UserInfoId;
-import com.mengyu.jpa_study.chapter1.repository.UserInfoRepository;
+import com.mengyu.jpa_study.chapter1.repository.user.UserInfoRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-
-import java.util.Optional;
 
 /**
  * @author yuzhang
@@ -22,8 +18,8 @@ public class CompositeKeyTest {
     @Test
     void testIdClass(){
         //userInfoRepository.save(UserInfo.builder().ages(1).name("jack").telephone("1234").build());
-        Optional<UserInfo> userInfo =
+        /*Optional<UserInfo> userInfo =
                 userInfoRepository.findById(UserInfoId.builder().name("jack").telephone("1234").build());
-        System.err.println(userInfo.get());
+        System.err.println(userInfo.get());*/
     }
 }

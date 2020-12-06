@@ -2,9 +2,9 @@ package com.mengyu.jpa_study.chapter1;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.mengyu.jpa_study.chapter1.entity.User;
 import com.mengyu.jpa_study.chapter1.dto.UserOnlyNameAndEmail;
-import com.mengyu.jpa_study.chapter1.repository.UserRepository;
+import com.mengyu.jpa_study.chapter1.entity.user.User;
+import com.mengyu.jpa_study.chapter1.repository.user.UserRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -12,7 +12,6 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Slice;
-import org.springframework.data.util.Streamable;
 
 import javax.transaction.Transactional;
 import java.util.List;
@@ -37,13 +36,13 @@ class JpaReturnTest {
      */
     @Test
     void testStreamable(){
-        userRepository.save(User.builder().name("jack").email("123@163.com").build());
+        /*userRepository.save(User.builder().name("jack").email("123@163.com").build());
         // 返回一个Streamable，后面还可以接集合的操作
         Streamable<User> users = userRepository.findAll(PageRequest.of(0,10))
                 .and(User.builder().name("jack222").build());
         users.forEach(user -> {
             System.err.println(user.toString());
-        });
+        });*/
     }
 
     @Test
