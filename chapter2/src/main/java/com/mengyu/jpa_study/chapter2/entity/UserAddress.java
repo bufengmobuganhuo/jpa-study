@@ -23,7 +23,7 @@ public class UserAddress {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String addres;
+    private String address;
 
     @ManyToOne(cascade = CascadeType.ALL)
     @JsonIgnore
