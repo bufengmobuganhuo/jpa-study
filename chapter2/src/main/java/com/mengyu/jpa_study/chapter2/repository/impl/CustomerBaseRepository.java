@@ -13,7 +13,7 @@ import javax.persistence.EntityManager;
  * TODO
  */
 @Transactional(readOnly = true)
-public class CustomerBaseRepository<T extends User,ID> extends SimpleJpaRepository<T,ID> {
+public class CustomerBaseRepository<T,ID> extends SimpleJpaRepository<T,ID> {
     private final JpaEntityInformation<T,?> entityInformation;
     private final EntityManager em;
     public CustomerBaseRepository(JpaEntityInformation<T, ?> entityInformation, EntityManager entityManager) {

@@ -15,7 +15,7 @@ import javax.transaction.Transactional;
 /**
  * @author yuzhang
  * @date 2020/12/8 下午8:12
- * TODO
+ * 自定义Repository实现测试
  */
 @SpringBootTest
 public class RepositoryImplTest {

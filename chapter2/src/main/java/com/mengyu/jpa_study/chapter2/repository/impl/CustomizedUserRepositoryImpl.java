@@ -10,7 +10,7 @@ import javax.persistence.EntityManager;
  * @date 2020/12/8 下午8:09
  * TODO
  */
-public class CustomizedUserRepositoryImpl implements CustomizedUserRepository {
+public class CustomizedUserRepositoryImpl<T> implements CustomizedUserRepository<T>{
 
     // 通过构造函数注入
     private final EntityManager entityManager;
@@ -20,8 +20,10 @@ public class CustomizedUserRepositoryImpl implements CustomizedUserRepository {
     }
 
     @Override
-    public void actualUpdateName(User user) {
-        entityManager.merge(user);
-        entityManager.flush();
+    public void actualUpdateName(T user) {
+        if (user instanceof User){
+            entityManager.merge(user);
+            entityManager.flush();
+        }
     }
 }

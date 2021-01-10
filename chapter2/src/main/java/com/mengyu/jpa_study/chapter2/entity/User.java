@@ -25,8 +25,8 @@ import java.util.Optional;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
-@ToString(exclude = "address")
-@EqualsAndHashCode(exclude = "address")
+@ToString(exclude = "address",callSuper = true)
+@EqualsAndHashCode(exclude = "address", callSuper = false)
 public class User extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -45,6 +45,6 @@ public class User extends BaseEntity {
 
     private Date updateDate;
 
-    @OneToMany(mappedBy = "user", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<UserAddress> address;
 }

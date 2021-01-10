@@ -13,10 +13,14 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
  */
 @Configuration
 @EnableJpaAuditing
-public class JpaConfiguration {
+public class JpaAuditingConfiguration {
+
+
     @Bean
     @ConditionalOnMissingBean(name = "myAuditorAware")
     MyAuditorAware myAuditorAware(){
         return new MyAuditorAware();
     }
+
+
 }

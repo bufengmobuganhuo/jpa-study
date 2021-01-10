@@ -7,6 +7,6 @@ import com.mengyu.jpa_study.chapter2.entity.User;
  * @date 2020/12/8 下午8:08
  * TODO
  */
-public interface CustomizedUserRepository {
-    void actualUpdateName(User user);
+public interface CustomizedUserRepository<T> {
+    void actualUpdateName(T user);
 }

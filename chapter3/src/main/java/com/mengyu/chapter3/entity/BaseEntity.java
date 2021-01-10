@@ -1,6 +1,5 @@
-package com.mengyu.jpa_study.chapter2.entity;
+package com.mengyu.chapter3.entity;
 
-import com.mengyu.jpa_study.chapter2.listener.EntityListener;
 import lombok.Data;
 import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
@@ -20,6 +19,10 @@ import java.time.Instant;
 @MappedSuperclass
 @EntityListeners({AuditingEntityListener.class})
 public class BaseEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+
     @CreatedBy
     private Integer createUserId;
 
